@@ -7,7 +7,7 @@
 		"lib/abnormalities.js": "a4081c1c49ed5a3421d2b086ee5f6e4efbc75a7533091894ddb671ee8d85873e",
 		"lib/commands.js": "88ad8919eb166a7cd0cba4aae9a3c2981219f45f486f97a4ec63d4ef48feb095",
 		"lib/cooldowns.js": "d0d055bd6a8a45d4dfe10e1c7e7802e39a2c8eab01d111d087768d587a7c5f2d",
-		"lib/core.js": "90c05fe245843f26cf96b03aceb4d69d5ee42ae591bd8d82f2a0609726e09782",
+		"lib/core.js": "a96663eac1df64f7fcd8bf91ce1f7222e35c9c3d404286360c5b14746a3b6019",
 		"lib/debug.js": "e588440fd11eb3d7eb84b15789df92b7f15d9d560ec2f7ef8597c384e402efb7",
 		"lib/index.js": "dded72ea79f9aa060722e1d904a6e842fbca80315fdbcdf6bdda8fa38f8e96fa",
 		"lib/ping.js": "72685743a006c63a839fdff8f9b448e3e31ccfda534acbd3c1396f5eb4e8e994",
