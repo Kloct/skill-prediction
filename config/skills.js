@@ -1339,19 +1339,19 @@ module.exports = {
 					}],
 					distance: 0
 				}
-			}, //new
+			},
 			10: true,
-			12: true, //new
+			12: true,
 			20: { moveDir: -0.5 },
-			22: { moveDir: -0.5 },//new
+			22: { moveDir: -0.5 },
 			30: { moveDir: -0.25 },
 			40: { moveDir: -0.75 },
 			50: { moveDir: 0.5 },
-			52: { moveDir: 0.5 },//new
+			52: { moveDir: 0.5 },
 			60: { moveDir: 0.25 },
 			70: { moveDir: 0.75 },
 			80: { moveDir: 1 },
-			82: { moveDir: 1 }, //new
+			82: { moveDir: 1 },
 		},
 		35: { // Windsong
 			0: true,
