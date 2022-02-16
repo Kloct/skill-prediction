@@ -1181,22 +1181,43 @@ module.exports = {
 		},
 		3: { // Radiant Arrow
 			'*': { moveDir: 1 },
-			0: true,
+			0: true, //change
+			1: { abnormRedirect: 21 },
 			10: { noRetry: true },
 			11: { noRetry: true },
 			12: { noRetry: true },
-			13: { noRetry: true }
+			13: { noRetry: true },
+			21: { //IA Charge
+				noRetry: true,
+				abnormals: { 603701: { chargeSpeed: 2.1 } }
+			},
+
+			30: { noRetry: true }, //IA Release0
+			31: { noRetry: true }, //IA Release1
+			32: { noRetry: true }, //IA Release2
+			33: { noRetry: true } //IA Release3
 		},
 		4: { // Penetrating Arrow
 			'*': { moveDir: 1 },
-			0: true,
+			0: true, //change
+			1: { abnormRedirect: 21 },
 			10: { noRetry: true },
 			11: { noRetry: true },
 			12: { noRetry: true },
-			13: { noRetry: true }
+			13: { noRetry: true },
+			21: { //IA Charge
+				noRetry: true,
+				abnormals: { 603701: { chargeSpeed: 2.1 } }
+			},
+
+			30: { noRetry: true }, //IA Release0
+			31: { noRetry: true }, //IA Release1
+			32: { noRetry: true }, //IA Release2
+			33: { noRetry: true } //IA Release3
 		},
 		5: { // Rain of Arrows
-			0: true
+			0: true,
+			50: true
 		},
 		6: { // Backstep
 			0: {
@@ -1215,23 +1236,16 @@ module.exports = {
 			}
 		},
 		8: { // Rapid Fire
-			'*': { noRetry: true },
-			0: { noInterrupt: [6] },
-			1: {
-				level: {
-					5: { noInterrupt: [6] }
-				}
+			'*': {
+				noRetry: true,
+				abnormals: { 602221: { speed: 1.1 } }
 			},
-			2: true,
-			3: true,
-			4: true,
-			5: true,
-			6: true,
-			7: true,
-			11: true,
-			12: true,
-			13: true,
-			14: true
+			0: {
+				length: [200, 0]
+			},
+			2: {
+				length: [160, 160, 160]
+			}
 		},
 		9: { // Slow Trap
 			0: true
@@ -1279,7 +1293,11 @@ module.exports = {
 			0: true
 		},
 		29: { // Thunderbolt
-			0: { moveDir: 1 }
+			'*': {
+				abnormals: { 602221: { speed: 1.3 } }
+			},
+			1: { moveDir: 1 },
+			2: { moveDir: 1 }
 		},
 		31: { // Tenacity
 			0: { ignoreAttackSpeed: true }
@@ -1300,7 +1318,7 @@ module.exports = {
 				instantStamina: true,
 				noRetry: true
 			},
-			0: {
+			1: {
 				inPlace: {
 					animSeq: [{
 						duration: 766,
@@ -1311,21 +1329,44 @@ module.exports = {
 					distance: 0
 				}
 			},
+			2: {
+				inPlace: {
+					animSeq: [{
+						duration: 766,
+						xyRate: 1,
+						zRate: 1,
+						distance: 0
+					}],
+					distance: 0
+				}
+			}, //new
 			10: true,
+			12: true, //new
 			20: { moveDir: -0.5 },
+			22: { moveDir: -0.5 },//new
 			30: { moveDir: -0.25 },
 			40: { moveDir: -0.75 },
 			50: { moveDir: 0.5 },
+			52: { moveDir: 0.5 },//new
 			60: { moveDir: 0.25 },
 			70: { moveDir: 0.75 },
-			80: { moveDir: 1 }
+			80: { moveDir: 1 },
+			82: { moveDir: 1 }, //new
 		},
 		35: { // Windsong
-			0: true
+			0: true,
+			30: true,
+			40: true,
 		},
 		36: { // Gust Arrow
 			0: { chargeLevels: [null, 360213] },
 			13: { noRetry: true }
+		},
+		37: { // Illusion Arrow
+			0: true
+		},
+		38: { // Illusion Explosion
+			0: true
 		}
 	},
 	6: { // Priest
@@ -1412,9 +1453,9 @@ module.exports = {
 				type: 'lockon',
 				ignoreAttackSpeed: true
 			},
-			10: { 
+			10: {
 				type: 'lockonCast',
-				level: { 
+				level: {
 					29: {
 						ignoreAttackSpeed: true,
 						cooldownEnd: 100 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
@@ -2478,9 +2519,9 @@ module.exports = {
 			30: { noRetry: true }
 		},
 		5: { // Burst Fire / Targeted Burst Fire
-			'*': { 
+			'*': {
 				noRetry: true,
-				noInterrupt: ['9-0', '9-10', '9-20'] 
+				noInterrupt: ['9-0', '9-10', '9-20']
 			},
 			0: {
 				noInterrupt: [5]
