@@ -1290,7 +1290,8 @@ module.exports = {
 			}
 		},
 		25: { // Incendiary Trap Arrow
-			0: true
+			0: true,
+			1: true
 		},
 		29: { // Thunderbolt
 			'*': {
