@@ -1241,10 +1241,10 @@ module.exports = {
 				abnormals: { 602221: { speed: 1.1 } }
 			},
 			0: {
-				length: [200, 0]
+				length: [200, 190]
 			},
 			2: {
-				length: [160, 160, 160]
+				length: [200, 200, 80]
 			}
 		},
 		9: { // Slow Trap
