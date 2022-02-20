@@ -1285,8 +1285,9 @@ module.exports = {
 		22: { // Sequential Fire
 			0: {
 				noInterrupt: [22],
-				requiredBuff: 600200,
-				noRetry: true
+				requiredBuff: [ 601900, 600200 ],
+				consumeAbnormal: [ 601900, 600200 ],
+				noRetry: false // this is set false to prevent tb -> sf(hold) skill queue from ghosting. But will spam cannot start skill
 			}
 		},
 		25: { // Incendiary Trap Arrow
@@ -1295,7 +1296,8 @@ module.exports = {
 		},
 		29: { // Thunderbolt
 			'*': {
-				abnormals: { 602221: { speed: 1.3 } }
+				abnormals: { 602221: { speed: 1.3 } },
+				triggerAbnormal: { 601900: 8000 }
 			},
 			1: { moveDir: 1 },
 			2: { moveDir: 1 }
