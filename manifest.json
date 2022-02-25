@@ -2,8 +2,8 @@
 	"files": {
 		"LICENSE": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
 		"README.md": "1c07692e52fbaab77ce0f50f6df8ab9aac4819c2b161f343ccaf37db50451ea7",
-		"config/abnormalities.js": "037460fe381086236482aeb6ab7b812155a3370c67aebae97e5665ac399fac8e",
-		"config/skills.js": "59a9bbf76cf0edaf290ce691f3f8def31a5a59e803764e5ba398523191ba8855",
+		"config/abnormalities.js": "8f5f7dc2b58e78e0d2842bf994232ce772c6e397c478a5a52df6b1f369ce93bc",
+		"config/skills.js": "a6bb27eee75c78e702af8a593036f60f35e0bd617ff44d9dac78f73fe3465e5d",
 		"lib/abnormalities.js": "a4081c1c49ed5a3421d2b086ee5f6e4efbc75a7533091894ddb671ee8d85873e",
 		"lib/commands.js": "88ad8919eb166a7cd0cba4aae9a3c2981219f45f486f97a4ec63d4ef48feb095",
 		"lib/cooldowns.js": "d0d055bd6a8a45d4dfe10e1c7e7802e39a2c8eab01d111d087768d587a7c5f2d",
