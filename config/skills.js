@@ -1495,7 +1495,7 @@ module.exports = {
 				triggerAbnormal: { 600200: 7000 },
 			},
 			0: { length: [200, 300] },
-			2: { length: [160, 160, 240] },
+			2: { length: [160, 160, 280] },
 		8: { // Rapid Fire
 			'*': { noRetry: true },
 			0: { noInterrupt: [6] },

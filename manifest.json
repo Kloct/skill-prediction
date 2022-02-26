@@ -3,7 +3,7 @@
 		"LICENSE": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
 		"README.md": "1c07692e52fbaab77ce0f50f6df8ab9aac4819c2b161f343ccaf37db50451ea7",
 		"config/abnormalities.js": "8f5f7dc2b58e78e0d2842bf994232ce772c6e397c478a5a52df6b1f369ce93bc",
-		"config/skills.js": "d5a2a56eba70fae78e4271f2af88f009d6efbf1ee2e3b8c011038b9efd5601c6",
+		"config/skills.js": "4e73d55ae3e47c960e531ccee25f191c0900f25dd8b04bea0b11c37cde52d8cf",
 		"lib/abnormalities.js": "a4081c1c49ed5a3421d2b086ee5f6e4efbc75a7533091894ddb671ee8d85873e",
 		"lib/commands.js": "88ad8919eb166a7cd0cba4aae9a3c2981219f45f486f97a4ec63d4ef48feb095",
 		"lib/cooldowns.js": "34ac487ce1af41957a6512dbb8b2c6039c0af5da7755ef71cd0b547f06ff2bf5",
