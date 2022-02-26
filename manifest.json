@@ -6,7 +6,7 @@
 		"config/skills.js": "20dadab3656d71d3635b7de0bd8c269cc5520b82c8e0fcf014c704a8529bffac",
 		"lib/abnormalities.js": "a4081c1c49ed5a3421d2b086ee5f6e4efbc75a7533091894ddb671ee8d85873e",
 		"lib/commands.js": "88ad8919eb166a7cd0cba4aae9a3c2981219f45f486f97a4ec63d4ef48feb095",
-		"lib/cooldowns.js": "1acf3505e4e19e6b91afc9311ec3e977ac656286a2c472cd860fd46eda8f8426",
+		"lib/cooldowns.js": "34ac487ce1af41957a6512dbb8b2c6039c0af5da7755ef71cd0b547f06ff2bf5",
 		"lib/core.js": "2850d85042e50615ba096bb32b003b41bc8f633acf83d6f171932cb091203e95",
 		"lib/debug.js": "0cd46cd119d347dd6b7020102dfcd72a4065cb98fa1abce070563a1a12431dd6",
 		"lib/index.js": "0a79f9a12dda44100637c400469939589bcd915f905f869c08dc186d130ea741",
