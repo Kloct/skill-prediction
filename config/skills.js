@@ -23,9 +23,9 @@ module.exports = {
 		9100100: { ignoreAttackSpeed: true } // Apex Urgency
 	},
 	0: { // Warrior
-		"*": { consumeAbnormal: 104110 },
+		'*': { consumeAbnormal: 104110 },
 		1: { // Combo Attack
-			"*": { noInterrupt: [1] },
+			'*': { noInterrupt: [1] },
 			0: true,
 			1: true,
 			2: true,
@@ -79,7 +79,7 @@ module.exports = {
 				distance: 467.88,
 				noRetry: true
 			},
-			1: { noInterrupt: [2, 10, "16-1", 32, 40, 41] }
+			1: { noInterrupt: [2, 10, '16-1', 32, 40, 41] }
 		},
 		17: { // Vortex Slash
 			0: true,
@@ -92,7 +92,7 @@ module.exports = {
 			2: true
 		},
 		19: { // Rising Fury
-			"*": { noInterrupt: [19] },
+			'*': { noInterrupt: [19] },
 			0: true,
 			1: true
 		},
@@ -290,7 +290,7 @@ module.exports = {
 			2: true
 		},
 		2: { // Stand Fast
-			"*": {
+			'*': {
 
 				ignoreAttackSpeed: true,
 				stamina: 50,
@@ -346,7 +346,7 @@ module.exports = {
 			0: true
 		},
 		10: { // Debilitate
-			"*": {
+			'*': {
 				triggerAbnormal: { 201830: 2000 },
 				consumeAbnormalEnd: 201830,
 				noInterrupt: [3, 4, 5, 8, 9, 10, 11, 12, 13, 15, 21, 23, 24, 25, 26, 27, 28, 29]
@@ -366,12 +366,12 @@ module.exports = {
 			0: true
 		},
 		13: { // Spring Attack
-			"*": {
+			'*': {
 				triggerAbnormal: { 201831: 2000 },
 				consumeAbnormalEnd: 201831
 			},
 			0: {
-				noInterrupt: ["1-0", "1-1", 3, 4, 9, 11, 12, 13, 15, 23, 24, 25, 26, 27, 28, 29],
+				noInterrupt: ['1-0', '1-1', 3, 4, 9, 11, 12, 13, 15, 23, 24, 25, 26, 27, 28, 29],
 				chains: {
 					1: 30,
 					5: 30,
@@ -398,7 +398,7 @@ module.exports = {
 			0: { ignoreAttackSpeed: true }
 		},
 		18: { // Shield Barrage
-			"*": {
+			'*': {
 				triggerAbnormal: { 201831: 2000 },
 				consumeAbnormalEnd: 201831,
 				noInterrupt: [18]
@@ -427,7 +427,7 @@ module.exports = {
 			0: { requiredBuff: 201000 }
 		},
 		24: { // Chained Leash
-			"*": { consumeAbnormal: 201803 },
+			'*': { consumeAbnormal: 201803 },
 			1: true,
 			2: true
 		},
@@ -490,7 +490,7 @@ module.exports = {
 			'*': { consumeAbnormal: 23220 },
 			1: true,
 			2: {
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, "28-1", "28-2", "28-3", 30, 31],
+				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, '28-1', '28-2', '28-3', 30, 31],
 				chains: { 14: 30, 27: 30 }
 			},
 			30: true
@@ -529,7 +529,7 @@ module.exports = {
 			0: {
 				length: 3375.7,
 				interruptAllWithAbnormal: { 301604: null },
-				noInterrupt: ["1-0", "1-1", "1-2", 4, 6, 8, 10, "14-0", "14-1", 17, 18, 21, 23, 25, 26, "28-1", "28-2", "28-3", 30, 31],
+				noInterrupt: ['1-0', '1-1', '1-2', 4, 6, 8, 10, '14-0', '14-1', 17, 18, 21, 23, 25, 26, '28-1', '28-2', '28-3', 30, 31],
 				abnormals: { 301604: { chain: 30 } },
 				chains: {
 					1: 30,
@@ -594,7 +594,7 @@ module.exports = {
 			}
 		},
 		18: { // Overpower
-			"*": { noInterrupt: [1, 2, 3, 4, 6, 8, 9, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 30, 31] },
+			'*': { noInterrupt: [1, 2, 3, 4, 6, 8, 9, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 30, 31] },
 			0: true,
 			50: true
 		},
@@ -617,7 +617,7 @@ module.exports = {
 			0: {
 				length: 3691.25,
 				interruptAllWithAbnormal: { 301604: 23 },
-				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, "28-1", "28-2", "28-3", 30, 31],
+				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, '28-1', '28-2', '28-3', 30, 31],
 				abnormals: { 301604: { chain: 30 } },
 				chains: {
 					8: 30,
@@ -634,7 +634,7 @@ module.exports = {
 				length: 1941,
 				distance: 50,
 				interruptAllWithAbnormal: { 301604: 24 },
-				noInterrupt: ["1-0", "1-1", "1-2", 4, 6, 10, 14, 16, 17, 18, 21, 22, 23, 24, 26, "28-1", "28-2", "28-3", 30, 31],
+				noInterrupt: ['1-0', '1-1', '1-2', 4, 6, 10, 14, 16, 17, 18, 21, 22, 23, 24, 26, '28-1', '28-2', '28-3', 30, 31],
 				abnormals: { 301604: { chain: 30 } },
 				chains: {
 					1: 30,
@@ -656,7 +656,7 @@ module.exports = {
 				length: [1078, 2166, 120],
 				distance: [40.51, 122.33, 11.21],
 				interruptAllWithAbnormal: { 301604: 26 },
-				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 26, "28-1", "28-2", "28-3", 31],
+				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 26, '28-1', '28-2', '28-3', 31],
 				abnormals: { 301604: { chain: 30 } },
 				chains: {
 					8: 30,
@@ -664,20 +664,20 @@ module.exports = {
 					24: 30,
 					25: 30,
 					27: 30,
-					"30-11": 30,
-					"30-12": 30,
-					"30-20": 30,
-					"30-21": 30,
-					"30-30": 30,
-					"30-31": 30,
-					"30-39": 30
+					'30-11': 30,
+					'30-12': 30,
+					'30-20': 30,
+					'30-21': 30,
+					'30-30': 30,
+					'30-31': 30,
+					'30-39': 30
 				}
 			},
 			30: true
 		},
 		27: { // Savage Strike
 			'*': {
-				noInterrupt: ["27-30", "27-41", "27-51"],
+				noInterrupt: ['27-30', '27-41', '27-51'],
 				hasChains: true,
 				noRetry: true
 			},
@@ -713,9 +713,9 @@ module.exports = {
 					24: 31,
 					25: 31,
 					26: 31,
-					"28-1": 31,
-					"28-2": 31,
-					"28-3": 31
+					'28-1': 31,
+					'28-2': 31,
+					'28-3': 31
 				}
 			},
 			30: {
@@ -758,9 +758,9 @@ module.exports = {
 					24: 42,
 					25: 42,
 					26: 42,
-					"28-1": 42,
-					"28-2": 42,
-					"28-3": 42
+					'28-1': 42,
+					'28-2': 42,
+					'28-3': 42
 				}
 			},
 			41: {
@@ -806,9 +806,9 @@ module.exports = {
 					24: 52,
 					25: 52,
 					26: 52,
-					"28-1": 52,
-					"28-2": 52,
-					"28-3": 52
+					'28-1': 52,
+					'28-2': 52,
+					'28-3': 52
 				}
 			},
 			51: {
@@ -838,7 +838,7 @@ module.exports = {
 		},
 		30: { // Rotation Combo
 			10: {
-				type: "charging",
+				type: 'charging',
 				timeRate: 1,
 				length: 1000,
 				perfectCharge: 12,
@@ -880,11 +880,11 @@ module.exports = {
 				consumeAbnormal: 302200,
 				consumeAbnormalEnd: [302207, 302208],
 				interruptAllWithAbnormal: { 301604: 30 },
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 27, "28-1", "28-2", "28-3", "30-20", "30-21", 31],
-				abnormals: { 301604: { chain: "31-21" } },
+				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 27, '28-1', '28-2', '28-3', '30-20', '30-21', 31],
+				abnormals: { 301604: { chain: '31-21' } },
 				chains: {
-					26: "30-21",
-					30: "30-21"
+					26: '30-21',
+					30: '30-21'
 				}
 			},
 			21: {
@@ -913,11 +913,11 @@ module.exports = {
 				consumeAbnormal: 302201,
 				consumeAbnormalEnd: [302202, 302204, 302207, 302208],
 				interruptAllWithAbnormal: { 301604: 30 },
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 27, "28-1", "28-2", "28-3", "30-30", "30-31", 31],
-				abnormals: { 301604: { chain: "31-31" } },
+				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 27, '28-1', '28-2', '28-3', '30-30', '30-31', 31],
+				abnormals: { 301604: { chain: '31-31' } },
 				chains: {
-					26: "30-31",
-					30: "30-31"
+					26: '30-31',
+					30: '30-31'
 				}
 			},
 			31: {
@@ -945,7 +945,7 @@ module.exports = {
 		},
 		31: { // Jump Smash
 			0: {
-				type: "charging",
+				type: 'charging',
 				timeRate: 1,
 				length: [1000, 0],
 				perfectCharge: 31,
@@ -1124,19 +1124,19 @@ module.exports = {
 				interruptibleWithAbnormal: { 401404: 2 },
 				chains: {
 					1: 30,
-					"3-10": 30,
-					"3-11": 30,
-					"3-12": 30,
-					"3-13": 30,
-					"10-10": 30,
-					"10-11": 30,
-					"10-12": 30,
-					"10-13": 30,
-					"15-10": 30,
-					"15-11": 30,
-					"15-12": 30,
-					"15-13": 30,
-					"15-14": 30,
+					'3-10': 30,
+					'3-11': 30,
+					'3-12': 30,
+					'3-13': 30,
+					'10-10': 30,
+					'10-11': 30,
+					'10-12': 30,
+					'10-13': 30,
+					'15-10': 30,
+					'15-11': 30,
+					'15-12': 30,
+					'15-13': 30,
+					'15-14': 30,
 					18: 30,
 					30: 31,
 					31: 30,
@@ -1146,19 +1146,19 @@ module.exports = {
 			1: {
 				chains: {
 					1: 31,
-					"3-10": 30,
-					"3-11": 30,
-					"3-12": 30,
-					"3-13": 30,
-					"10-10": 30,
-					"10-11": 30,
-					"10-12": 30,
-					"10-13": 30,
-					"15-10": 30,
-					"15-11": 30,
-					"15-12": 30,
-					"15-13": 30,
-					"15-14": 30,
+					'3-10': 30,
+					'3-11': 30,
+					'3-12': 30,
+					'3-13': 30,
+					'10-10': 30,
+					'10-11': 30,
+					'10-12': 30,
+					'10-13': 30,
+					'15-10': 30,
+					'15-11': 30,
+					'15-12': 30,
+					'15-13': 30,
+					'15-14': 30,
 					18: 30,
 					30: 31,
 					32: 31
@@ -1171,7 +1171,7 @@ module.exports = {
 			0: true
 		},
 		27: { // Unbreakable
-			"*": { noInterrupt: [1, 2, '3-10', '3-11', '3-12', '3-13', 4, 6, '8-30', '10-10', '10-11', '10-12', '10-13', 11, 13, '15-10', '15-11', '15-12', '15-13', '15-14', 18, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33] },
+			'*': { noInterrupt: [1, 2, '3-10', '3-11', '3-12', '3-13', 4, 6, '8-30', '10-10', '10-11', '10-12', '10-13', 11, 13, '15-10', '15-11', '15-12', '15-13', '15-14', 18, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33] },
 			0: {
 				interruptibleWithAbnormal: { 401705: 33 },
 				chains: {
@@ -1207,10 +1207,10 @@ module.exports = {
 				length: 1115,
 				distance: 467.88
 			},
-			1: { noInterrupt: [2, 4, 10, 25, "31-1"] }
+			1: { noInterrupt: [2, 4, 10, 25, '31-1'] }
 		},
 		32: { // Punishing Strike
-			"*": { noInterrupt: [32] },
+			'*': { noInterrupt: [32] },
 			0: { requiredBuff: 401400 },
 			1: true
 		},
@@ -1534,7 +1534,7 @@ module.exports = {
 			0: true
 		},
 		18: { // Close Quarters
-			"*": { noInterrupt: [18] },
+			'*': { noInterrupt: [18] },
 			0: true,
 			1: true
 		},
@@ -1555,7 +1555,7 @@ module.exports = {
 			0: true
 		},
 		29: { // Thunderbolt
-			"*": { 
+			'*': { 
 				distance: -100,
 				moveDir: 1
 			},
@@ -1655,9 +1655,9 @@ module.exports = {
 		}
 	},
 	6: { // Priest
-		"*": { consumeAbnormal: 806104 },
+		'*': { consumeAbnormal: 806104 },
 		1: { // Divine Radiance
-			"*": { noInterrupt: [1] },
+			'*': { noInterrupt: [1] },
 			0: true,
 			1: true,
 			2: true,
@@ -1668,9 +1668,9 @@ module.exports = {
 		},
 		3: { // Healing Circle
 			0: {
-				noInterrupt: [2, 3, 5, 10, 12, 11, 14, 16, 18, 25, 27, 28, "30-10", "33-10", 34, "35-10", "37-10", "41-10", 42],
+				noInterrupt: [2, 3, 5, 10, 12, 11, 14, 16, 18, 25, 27, 28, '30-10', '33-10', 34, '35-10', '37-10', '41-10', 42],
 				chains: {
-					"19-30": 30,
+					'19-30': 30,
 					26: 30,
 					38: 30
 				}
@@ -1690,7 +1690,7 @@ module.exports = {
 			0: true
 		},
 		11: { // Metamorphic Blast
-			"*": { triggerAbnormal: { 806104: 1480 } },
+			'*': { triggerAbnormal: { 806104: 1480 } },
 			0: true,
 			1: true,
 			2: true,
@@ -1703,9 +1703,9 @@ module.exports = {
 			0: true
 		},
 		16: { // Shocking Implosion
-			"*": {
+			'*': {
 				triggerAbnormal: { 806104: 1480 },
-				noInterrupt: [2, 3, 5, 10, 12, 14, 16, 18, "19-10", 25, 26, 28, 29, "30-10", "33-10", 34, "35-10", "37-10", 38, 40, "41-10", 42]
+				noInterrupt: [2, 3, 5, 10, 12, 14, 16, 18, '19-10', 25, 26, 28, 29, '30-10', '33-10', 34, '35-10', '37-10', 38, 40, '41-10', 42]
 			},
 			0: {
 				chains: {
@@ -1760,13 +1760,13 @@ module.exports = {
 		},
 		26: { // Fiery Escape
 			0: {
-				noInterrupt: [26, "28-10", "28-11", "28-12", "28-13", 34, 38],
+				noInterrupt: [26, '28-10', '28-11', '28-12', '28-13', 34, 38],
 				moveDir: 1,
 				forceClip: true
 			}
 		},
 		27: { // Final Reprisal
-			'*': { noInterrupt: [2, 3, 5, 10, 12, 14, 18, "19-10", 25, 26, 27, 28, "30-10", "33-10", 34, "35-10", "37-10", 38, "41-10", 42] },
+			'*': { noInterrupt: [2, 3, 5, 10, 12, 14, 18, '19-10', 25, 26, 27, 28, '30-10', '33-10', 34, '35-10', '37-10', 38, '41-10', 42] },
 			0: {
 				abnormals: { 806104: { chain: 30 } },
 				chains: {
@@ -1806,7 +1806,7 @@ module.exports = {
 			13: { noRetry: true }
 		},
 		29: { // Triple Nemesis
-			"*": { triggerAbnormal: { 806104: 1480 } },
+			'*': { triggerAbnormal: { 806104: 1480 } },
 			0: true,
 			1: true,
 			2: true
@@ -1870,7 +1870,7 @@ module.exports = {
 			0: true
 		},
 		40: { // Zenobia's Vortex
-			"*": { triggerAbnormal: { 806140: 1480 } },
+			'*': { triggerAbnormal: { 806140: 1480 } },
 			0: true,
 			10: true,
 			20: true
@@ -1996,7 +1996,7 @@ module.exports = {
 			},
 			10: {
 				noRetry: true,
-				noInterrupt: ["18-10"]
+				noInterrupt: ['18-10']
 			}
 		},
 		21: { // Retaliate
@@ -2011,7 +2011,7 @@ module.exports = {
 		},
 		23: { // Metamorphic Smite
 			0: {
-				noInterrupt: [1, 2, 4, "5-10", 6, "9-10", 10, 13, 14, 15, 16, 17, "18-10", 21, "22-10", 23, 37, "41-10", 43, 48],
+				noInterrupt: [1, 2, 4, '5-10', 6, '9-10', 10, 13, 14, 15, 16, 17, '18-10', 21, '22-10', 23, 37, '41-10', 43, 48],
 				chains: { 8: 30 }
 			},
 			30: true
@@ -2234,7 +2234,7 @@ module.exports = {
 		},
 		3: { // Double Shear
 			'*': {
-				noInterrupt: ["1-0", "1-2", 3, 4, 12, 13, 14, 15, 18, 19, 20, 21, 23, 40],
+				noInterrupt: ['1-0', '1-2', 3, 4, 12, 13, 14, 15, 18, 19, 20, 21, 23, 40],
 				inPlace: {
 					animSeq: [{
 						duration: 2140,
@@ -2411,7 +2411,7 @@ module.exports = {
 				}
 			},
 			0: {
-				noInterrupt: ["1-0", "1-2", 4, 12, 13, 14, 15, 18, 20, 23, 40],
+				noInterrupt: ['1-0', '1-2', 4, 12, 13, 14, 15, 18, 20, 23, 40],
 				chains: {
 					1: 30,
 					3: 30,
@@ -2445,7 +2445,7 @@ module.exports = {
 		6: { // Death Spiral
 			'*': { noRetry: true },
 			0: {
-				noInterrupt: ["6-31", 19, 21, 23],
+				noInterrupt: ['6-31', 19, 21, 23],
 				chains: {
 					1: 30,
 					3: 30,
@@ -2501,7 +2501,7 @@ module.exports = {
 			41: true
 		},
 		9: { // Smite
-			"*": {
+			'*': {
 				distance: 168,
 				inPlace: {
 					animSeq: [{
@@ -2560,7 +2560,7 @@ module.exports = {
 		},
 		11: { // Shadow Lash
 			'*': {
-				noInterrupt: [1, 3, 4, 5, 6, 8, 9, 10, "11-3", 12, 13, 14, 15, 18, 19, 20, 21, 23, 40],
+				noInterrupt: [1, 3, 4, 5, 6, 8, 9, 10, '11-3', 12, 13, 14, 15, 18, 19, 20, 21, 23, 40],
 				noRetry: true
 			},
 			0: { triggerAbnormal: { 10151040: 2000 } },
@@ -3852,7 +3852,7 @@ module.exports = {
 			52: true
 		},
 		9: { // Smoke Bomb
-			"*": { cooldownEnd: 300 },
+			'*': { cooldownEnd: 300 },
 			0: { categoryChains: { 900: 30 } },
 			30: {
 				connectSkillArrow: true,
@@ -4052,7 +4052,7 @@ module.exports = {
 			30: true
 		},
 		4: { // Charge
-			"*": { noInterrupt: [1, 2, "4-10", "4-11", 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25] },
+			'*': { noInterrupt: [1, 2, '4-10', '4-11', 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25] },
 			0: {
 				ignoreAttackSpeed: true,
 				length: 550,
@@ -4124,7 +4124,7 @@ module.exports = {
 		},
 		10: { // Dream Slash
 			'*': {
-				noInterrupt: ["4-0", 10],
+				noInterrupt: ['4-0', 10],
 				hasChains: true,
 				noRetry: true
 			},
@@ -4229,7 +4229,7 @@ module.exports = {
 			'*': {
 				hasChains: true,
 				noRetry: true,
-				noInterrupt: [25, "11-0", "11-30"]
+				noInterrupt: [25, '11-0', '11-30']
 			},
 			0: {
 				triggerAbnormal: { 10155543: 1000 },
