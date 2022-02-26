@@ -653,7 +653,7 @@ module.exports = {
 		},
 		26: { // Punishing Blow
 			0: {
-				length: [1078, 2166, 120],
+				length: [1094, 2166, 115],
 				distance: [40.51, 122.33, 11.21],
 				interruptAllWithAbnormal: { 301604: 26 },
 				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 26, '28-1', '28-2', '28-3', 31],
