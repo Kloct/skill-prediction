@@ -1302,7 +1302,7 @@ module.exports = {
 			0: true
 		},
 		6: { // Meteor Strike
-			0: true
+			0: true // wrong warp barrier chain due to outdated parse ig
 		},
 		7: { // Backstep
 			0: {
@@ -1415,7 +1415,7 @@ module.exports = {
 			10: true,
 			20: true
 		},
-		32: { // Meteor Strike (Mana Boost)
+		32: { // Meteor Shower (Mana Boost)
 			'*': { noRetry: true },
 			0: true,
 			50: true
@@ -1490,6 +1490,12 @@ module.exports = {
 				moveDir: 1
 			}
 		},
+		'*': {
+				noInterrupt: [6, '8-2'], // idk why this is here
+				triggerAbnormal: { 600200: 7000 },
+			},
+			0: { length: [200, 300] },
+			2: { length: [160, 160, 240] },
 		8: { // Rapid Fire
 			'*': { noRetry: true },
 			0: { noInterrupt: [6] },
