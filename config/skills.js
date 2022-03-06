@@ -1244,7 +1244,7 @@ module.exports = {
 				length: [200, 190]
 			},
 			2: {
-				length: [200, 200, 80]
+				length: [160, 160, 280]
 			}
 		},
 		9: { // Slow Trap
