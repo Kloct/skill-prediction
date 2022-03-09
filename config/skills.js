@@ -1472,7 +1472,10 @@ module.exports = {
 			13: { noRetry: true }
 		},
 		5: { // Rain of Arrows
+			'*': { length: 3153.84 }, 
 			0: true
+			10: true,
+			50: true
 		},
 		6: { // Backstep
 			0: {
