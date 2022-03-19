@@ -11,7 +11,7 @@
         "client_data/skills.json": "11add93ccab6043aaa5bef0fb7133f5e6df5da14928efccd34d0fd4436c69482",
         "client_data/subPassives.json": "6ad08f8894b4f499ce16801d8072e6923da01834def41c0a9b0f482a48c004a1",
         "config/abnormalities.js": "8f5f7dc2b58e78e0d2842bf994232ce772c6e397c478a5a52df6b1f369ce93bc",
-        "config/skills.js": "6cf5715c539e091a34fc121d1e5c7d04c219da4024fc5ab6894a11589d443ee7",
+        "config/skills.js": "bbb0750ea700aa0280b215308d402ac087a1d45ac78ea3bd6f8bee37eb9d6e2c",
         "lib/abnormalities.js": "a4081c1c49ed5a3421d2b086ee5f6e4efbc75a7533091894ddb671ee8d85873e",
         "lib/commands.js": "88ad8919eb166a7cd0cba4aae9a3c2981219f45f486f97a4ec63d4ef48feb095",
         "lib/cooldowns.js": "2a75930f620c2b1c8d284d7643338a9b36745fbff9aeff5e4fe2320fa0493b43",
