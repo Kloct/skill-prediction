@@ -12,14 +12,20 @@ module.exports = {
 	301600: true,
 	301601: true,
 	301603: true,
-
+	301604: true,
+	// Rotation Combo
+	302207: true, // Visual Effect
+	302208: true, // Visual Effect
+	302200: true,
+	302201: true,
+	302202: true,
+	
 	/* Reaper */
 	// Spiral Barrage
 	10151020: true,
 	10151021: true,
 	10151022: true,
 	10151023: true,
-
 	// Dark Harvest
 	10151250: true, // stuff thingy
 	10151230: true, // effect thingy
