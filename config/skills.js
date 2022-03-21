@@ -1457,23 +1457,43 @@ module.exports = {
 		},
 		3: { // Radiant Arrow
 			'*': { moveDir: 1 },
-			0: true,
+			0: true, //change
+			1: { abnormRedirect: 21 },
 			10: { noRetry: true },
 			11: { noRetry: true },
 			12: { noRetry: true },
-			13: { noRetry: true }
+			13: { noRetry: true },
+			21: { //IA Charge
+				noRetry: true,
+				abnormals: { 603701: { chargeSpeed: 2.1 } }
+			},
+
+			30: { noRetry: true }, //IA Release0
+			31: { noRetry: true }, //IA Release1
+			32: { noRetry: true }, //IA Release2
+			33: { noRetry: true } //IA Release3
 		},
 		4: { // Penetrating Arrow
 			'*': { moveDir: 1 },
-			0: true,
+			0: true, //change
+			1: { abnormRedirect: 21 },
 			10: { noRetry: true },
 			11: { noRetry: true },
 			12: { noRetry: true },
-			13: { noRetry: true }
+			13: { noRetry: true },
+			21: { //IA Charge
+				noRetry: true,
+				abnormals: { 603701: { chargeSpeed: 2.1 } }
+			},
+
+			30: { noRetry: true }, //IA Release0
+			31: { noRetry: true }, //IA Release1
+			32: { noRetry: true }, //IA Release2
+			33: { noRetry: true } //IA Release3
 		},
 		5: { // Rain of Arrows
 			'*': { length: 3153.84 }, 
-			0: true
+			0: true,
 			10: true,
 			50: true
 		},
@@ -1495,10 +1515,11 @@ module.exports = {
 		},
 		8: { // Rapid Fire
 			'*': {
-				noInterrupt: [6, '8-2'], // idk why this is here
+				noRetry: true,
+				abnormals: { 602221: { speed: 1.1 } },
 				triggerAbnormal: { 600200: 7000 },
 			},
-			0: { length: [200, 300] },
+			0: { length: [200, 190] },
 			2: { length: [160, 160, 280] }
 		},
 		9: { // Slow Trap
@@ -1539,15 +1560,19 @@ module.exports = {
 		22: { // Sequential Fire
 			0: {
 				noInterrupt: [22],
-				requiredBuff: 600200,
-				noRetry: true
+				requiredBuff: [ 601900, 600200 ],
+				consumeAbnormal: [ 601900, 600200 ],
+				noRetry: false // this is set false to prevent tb -> sf(hold) skill queue from ghosting. But will spam cannot start skill
 			}
 		},
 		25: { // Incendiary Trap Arrow
-			0: true
+			0: true,
+			1: true
 		},
 		29: { // Thunderbolt
-			'*': { 
+			'*': {
+				abnormals: { 602221: { speed: 1.3 } },
+				triggerAbnormal: { 601900: 8000 },
 				distance: -100,
 				moveDir: 1
 			},
@@ -1616,7 +1641,7 @@ module.exports = {
 			50: { moveDir: 0.5 },
 			60: { moveDir: 0.25, distance: 187 },
 			70: { moveDir: 0.75, distance: 187 },
-			80: { moveDir: 1, distance: -120 },
+			80: { moveDir: 1, distance: 120 },
 			12: true,
 			22: { moveDir: -0.5 },
 			32: { moveDir: -0.25 },
@@ -1624,10 +1649,12 @@ module.exports = {
 			52: { moveDir: 0.5 },
 			62: { moveDir: 0.25, distance: 187 },
 			72: { moveDir: 0.75, distance: 187 },
-			82: { moveDir: 1, distance: -120 }
+			82: { moveDir: 1, distance: 120 }
 		},
 		35: { // Windsong
-			0: true
+			0: true,
+			30: true,
+			40: true,
 		},
 		36: { // Gust Arrow
 			0: { chargeLevels: [null, 360213] },
@@ -2796,9 +2823,9 @@ module.exports = {
 			30: { noRetry: true }
 		},
 		5: { // Burst Fire / Targeted Burst Fire
-			'*': { 
+			'*': {
 				noRetry: true,
-				noInterrupt: ['9-0', '9-10', '9-20'] 
+				noInterrupt: ['9-0', '9-10', '9-20']
 			},
 			0: {
 				noInterrupt: [5]

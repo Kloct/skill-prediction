@@ -82,3 +82,4 @@ This file contains skill data specific to skill-prediction. The basic structure 
 * **noRetry** (boolean): Disables automatic retries for this skill.
 * **race** (object): Keys are race+gender ID, values override `skillData` properties.
 * **level** (object): Keys are skill level - 1 (to enable array usage), values override `skillData` properties.
+* **abnormRedirect** (groupId): for granting skills when a stage runs out of the abnormality window but the skill should still be granted.

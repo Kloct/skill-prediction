@@ -1,5 +1,4 @@
 {
-    "disableAutoUpdate": false,
     "name": "skill-prediction",
     "author": "Pinkie Pie / many others",
     "description": "Simulates skills client-side, eliminating ping-based delays and animation lock.",
@@ -10,7 +9,8 @@
         "settingsFile": "settings.json",
         "settingsMigrator": "migration.js"
     },
-    "servers": ["https://raw.githubusercontent.com/SaltyMonkey/skill-prediction/master/"],
+    "servers": ["https://raw.githubusercontent.com/Kloct/skill-prediction/master/"],
     "supportUrl": "https://github.com/tera-mods/skill-prediction/issues",
-    "conflicts": ["zsync", "aa-zsync","cooldowns","cooldowns-master","fastfire","fastfire-master","fast-fire","fast-fire-master","lockons","lockons-master","lockons-light","lockons-light-master","ping-compensation","ping-remover","skill-prediction-master","skill-prediction-plus"]
+    "conflicts": ["zsync","aa-zsync","cooldowns","cooldowns-master","fastfire","fastfire-master","fast-fire","fast-fire-master","lockons","lockons-master","lockons-light","lockons-light-master","ping-compensation","ping-remover","skill-prediction-master","skill-prediction-plus"],
+    "disableAutoUpdate": false
 }
