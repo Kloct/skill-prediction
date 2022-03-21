@@ -1641,7 +1641,7 @@ module.exports = {
 			50: { moveDir: 0.5 },
 			60: { moveDir: 0.25, distance: 187 },
 			70: { moveDir: 0.75, distance: 187 },
-			80: { moveDir: 1, distance: 120 },
+			80: { moveDir: 1, distance: -120 },
 			12: true,
 			22: { moveDir: -0.5 },
 			32: { moveDir: -0.25 },
@@ -1649,7 +1649,7 @@ module.exports = {
 			52: { moveDir: 0.5 },
 			62: { moveDir: 0.25, distance: 187 },
 			72: { moveDir: 0.75, distance: 187 },
-			82: { moveDir: 1, distance: 120 }
+			82: { moveDir: 1, distance: -120 }
 		},
 		35: { // Windsong
 			0: true,
