@@ -836,6 +836,7 @@ module.exports = {
 			2: true,
 			3: true
 		},
+		/*
 		30: { // Rotation Combo
 			10: {
 				type: 'charging',
@@ -972,7 +973,8 @@ module.exports = {
 				consumeAbnormal: 302208,
 				consumeAbnormalEnd: 302211
 			}
-		},
+		}
+		*/
 	},
 	3: { // Berserker
 		1: { // Combo Attack
